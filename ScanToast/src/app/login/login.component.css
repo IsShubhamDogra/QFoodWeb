@@ -1,0 +1,62 @@
+.container{
+    width:auto;
+    border-radius: 8px;
+    height:20rem;
+    max-width:600px !important;
+    position: relative; 
+    margin-left: 25%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0px !important;
+    box-shadow: 0px 0px 20px 6px rgb(210, 208, 208);
+}
+.admin-icon{
+    background-color: rgb(0, 165, 253);
+    width: 16rem;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.submit{
+    cursor: pointer;
+    width: fit-content;
+}
+.fields{
+    display:grid;
+    gap: 30px;
+}
+span{
+    color: red;
+}
+label{
+    font-weight: 800;
+}
+.email{
+    display:grid;
+    gap: 5px;
+}
+.Pass{
+    display:grid;  
+    gap: 5px;
+}
+#Email{
+    padding: 3px 6px 3px;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border:.5px solid rgb(227, 224, 224);
+}
+#pass{
+    padding: 3px 6px 3px;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border:.5px solid rgb(227, 224, 224);
+}
+.admin-form{
+    display: grid;
+    gap: 30px;
+}

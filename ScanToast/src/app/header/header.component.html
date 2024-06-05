@@ -1,0 +1,59 @@
+<header class="web-head">
+    <div class="head-info">
+        <div class="logo-img">
+            <div class="brand-logo">
+                <img class="brand-image" src="assets/logo3.png">
+            </div>
+            <div class="web-name">
+                <span class="info-web">Online Food Ordering</span>
+            </div>
+        </div>
+        <div class="set-cart">
+            <div class="cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+            aria-controls="offcanvasBottom">
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">YOUR CART</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    
+                </div>
+                <div class="ov">
+                    <div >
+                        <div class="list row">
+                            <div class="a col-3"><span class="badge text-bg-info">Name</span></div>
+                            <div class="a col-3 text-end"><span class="badge text-bg-info">Price</span></div>
+                            <div id="q" class="a col-3"><span class="badge text-bg-info">Quantity</span></div>
+                            <div class="a col-3 text-end"><span class="badge text-bg-info">Delete</span></div>
+                        </div>
+                        <div class="list row" *ngFor="let cartItem of a()">
+                            <span class="col-3">{{ cartItem.itemName }}</span>
+                            <span class="col-3 text-end">₹{{ cartItem.itemPrice}}</span>
+                            <span id="q" class="col-3 ">{{cartItem.quantity}}</span>
+                            <div  class="col-3 text-end">
+                                <button class=" btn btn-danger" (click)="deleteItem(cartItem)"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                  </svg>
+                                </button>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="total">
+                        <label>Total:</label>
+                        <span class="badge text-bg-warning">₹{{ getTotalPrice() }}</span>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary" type="button" (click)="openDialog()" [disabled]="(a().length>0)?false:true">checkout</button>
+                
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fa2111" class="bi bi-bag-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+              </svg>
+        </div>
+        <label class="badge text-bg-danger">{{getValue()}}</label>
+        </div>
+    </div>
+</header>

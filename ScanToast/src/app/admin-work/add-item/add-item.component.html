@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="con-h1">
+    <h1><span class="title-font">Insert New Items</span></h1>
+  </div>
+  <form [formGroup]="formData">
+    <div>
+      <input type="file" name="selectedFile" (change)="onFileSelected($event)" accept="image/*">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label"><strong>Item Name:</strong></label>
+      <input type="text" class="form-control" id="inputAddress" formControlName="itemName" placeholder="Item name">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label"><strong>Price:</strong></label>
+      <input type="number" class="form-control" id="exampleInputEmail1" formControlName="price" placeholder="Price">
+    </div>
+    <button type="button" class="btn btn-success" id="submitBtn" (click)="upload()">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,70 @@
+.container1{
+    width: 85%;
+    border-bottom: 1px solid #dee2e6;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.brand-image{
+    height: 10rem;
+}
+.text{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Brush Script MT', cursive;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    gap: 6rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.menu-content{
+    cursor: pointer;
+    width: 20rem;
+    height: 17rem;
+    border: .5px solid black;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.menu-content:hover{
+    transform: translateX(20px);
+    background-color: rgb(247, 247, 228);
+}
+.admin-page{
+    cursor: pointer;
+    width: 20rem;
+    height: 17rem;
+    border-radius: 10px;
+    border: .5px solid black;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.admin-page:hover{
+    transform: translateX(20px);
+    background-color: rgb(247, 247, 228);
+}
+.indiv-text-head{
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.item-title-font{
+    font-weight: 700;
+    font-size: 30px;
+        font-weight: bold;
+        color: white;
+}
+.type-icons{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+}

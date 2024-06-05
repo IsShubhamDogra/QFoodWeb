@@ -1,0 +1,23 @@
+<div class="container-fluid">
+<div class="body">
+    <app-header></app-header>
+    <app-subhead></app-subhead>
+</div>
+<div class="container" *ngIf="data" >
+    <div class="item-box" *ngFor="let item of data" [attr.data-item-id]="item._id">
+        <div class="item-image">
+            <img class="product-image" [src]="getImageSrc(item.image)"  alt="Item Image">
+        </div>
+        <div class="item-detail">
+        <div class="item-name">
+            {{item.itemName}}
+        </div>
+        <div class="item-proce">
+            <span>₹</span>{{item.price}}
+        </div>
+        <button class="btn btn-danger" (click)="addToCart(item)">Add</button>
+        </div>
+    </div>
+</div>
+</div>
+

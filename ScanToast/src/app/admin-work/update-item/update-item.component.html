@@ -1,0 +1,15 @@
+<form [formGroup]="itemForm" (ngSubmit)="updateItem()">
+  <div class="form">
+    <div class="container">
+      <div class="name">
+        <label for="itemName">Item Name</label>
+        <input type="text" id="itemName" formControlName="itemName">
+      </div>
+      <div class="price">
+        <label for="price">Price</label>
+        <input type="number" id="price" formControlName="price">
+      </div>
+    </div>
+    <button class="btn btn-success" type="submit" >Update Item</button>
+  </div> 
+</form>

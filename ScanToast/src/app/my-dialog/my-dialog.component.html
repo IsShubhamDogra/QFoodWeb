@@ -1,0 +1,35 @@
+
+<div class="head">
+  <h2 mat-dialog-title><span class="badge text-bg-secondary">User Info</span></h2>
+  <mat-dialog-actions>
+    <button class="btn btn-danger" mat-button (click)="closeDialog()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x"
+        viewBox="0 0 16 16">
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+      </svg></button>
+  </mat-dialog-actions>
+</div>
+<mat-dialog-content>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="input">
+         <label>
+        Name
+        <input matInput class="form_input" type="text"  id="name" formControlName="name" placeholder="Enter your name">
+         <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error">
+          <span *ngIf="contactForm && contactForm.get('name')?.errors?.['required']">Name is required.</span>
+         </div>
+         </label>
+         <label>
+        Phone
+        <input type="text" id="phone" formControlName="phone" placeholder="Enter your phone number">
+         <div *ngIf="contactForm.get('phone')?.touched && contactForm.get('phone')?.invalid" class="error">
+          <span *ngIf="contactForm && contactForm.get('phone')?.errors?.['required']">Phone number is required.</span>
+          <span *ngIf="contactForm && contactForm.get('phone')?.errors?.['pattern']">Invalid Phone number.</span>
+         </div>
+        </label>
+      </div>
+ 
+    <button class="btn btn-primary" type="submit">Pay</button>
+    </form>
+</mat-dialog-content>

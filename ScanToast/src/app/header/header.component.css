@@ -1,0 +1,119 @@
+.head-info{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    max-width: 1120px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@media(max-width:500px){
+    .d-flex{
+        display: none !important;
+    }
+}
+.info-web{
+  font-size: 22px;
+}
+.brand-image{
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+.logo-img{
+    width: 260px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    height: 80px !important;
+}
+.web-name{
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    justify-content: center;
+    font-family: 'Brush Script MT', cursive;
+}
+.btn-light{
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.row{
+  padding: 3px 0 3px;
+}
+.cart{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px;
+    border-radius: 9px;
+    width: fit-content;
+  }
+  .set-cart{
+    display: flex;
+    padding: 5px 0px 0px;;
+    gap: 0;
+  }
+  .cart:hover{
+    cursor: pointer;
+    background-color: rgb(236, 236, 236);  
+  }
+  .offcanvas{
+    height: 30rem;
+    border-radius: 6px;
+    padding: 20px 20px 20px;
+    background-color: rgb(235, 236, 236);
+  }
+  #offcanvasBottom {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid rgb(218, 212, 212);
+  }
+  span{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .a{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .btn-del{
+    width: 20px;
+  }
+  .ov{
+    display: grid;
+    gap: 20px;
+    
+    padding: 10px 10px 10px;
+    overflow-y: scroll;
+  }
+  .ov::-webkit-scrollbar{
+    display: none;
+  }
+  .total{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    justify-content: end;
+  }
+  label{
+    font-size: 10px;
+    font-weight: 500;
+    height: fit-content;
+    position: inherit;
+  }
+  #q{
+    text-align: center;
+  }

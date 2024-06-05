@@ -1,0 +1,27 @@
+.web-foot{
+    position: relative;
+    background-color: black;
+    display: flex;
+    /* padding-top: 7rem;
+    padding-bottom: 7rem; */
+    height: 15rem;
+    
+    /* background-image: url(/assets/rod-long-I79Pgmhmy5M-unsplash.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+/* .overlay{
+    background: linear-gradient(to top, rgb(209, 208, 208) ,transparent 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+} */
+.container{
+  position: relative;
+  z-index: 2;
+}
+h2,h4{
+  color: white;
+}

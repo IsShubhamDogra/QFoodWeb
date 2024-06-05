@@ -1,0 +1,25 @@
+
+  .btn-danger{
+    display: flex;
+    align-items: center;
+  }
+  .head{
+    display: flex;
+    justify-content: space-between;
+  }
+  .input{
+    display: grid;
+    gap: 20px;
+  }
+  label{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+  }
+  form{
+    display: grid;
+    gap: 30px;
+  }
+  .error{
+    color:red;
+  }

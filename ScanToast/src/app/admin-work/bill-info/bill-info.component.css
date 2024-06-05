@@ -1,0 +1,19 @@
+h1{
+    display: flex;
+    justify-content: center;
+    background-color: #38a65b;
+    padding: 20px;
+    color: white;
+    }
+    .ov{
+        margin-top: 4rem;
+    }
+.row{
+    font-weight: 500;
+    width: 100%;
+}
+.col-3{
+    margin-top: 1rem;
+    text-align:center;
+    border-bottom: 0.5px solid gray;
+}

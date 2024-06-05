@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Bill-List</h1>
+<div class="ov" *ngIf="bills" >
+    <div class="row">
+        <div class="col-3">
+            <h4>Payment ID</h4>
+        </div>
+      <div class="col-3">
+        <h4>Name</h4>
+      </div>
+      <div class="col-3">
+        <h4>Contact</h4>
+    </div>
+      <div class="col-3">
+        <h4>Total</h4>
+      </div>
+    </div>
+  <div class="bill-box" *ngFor="let bill of bills" [attr.data-item-id]="bill._id">
+      <div class="row">
+        <div class="col-3">
+            {{bill.pay_id}}
+        </div>
+      <div class="col-3">
+          {{bill.name}}
+      </div>
+      <div class="col-3">
+        {{bill.phone}}
+    </div>
+      <div class="col-3">
+          <span>₹</span>{{bill.amount}}
+      </div>
+    </div>
+  </div>
+</div> 
+</div>

@@ -1,0 +1,4 @@
+For DB Install MongoDB
+Create Database name as---> foodDB
+Create table name 1---> items
+create table name 2---> bills
